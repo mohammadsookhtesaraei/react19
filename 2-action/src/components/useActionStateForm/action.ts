@@ -15,7 +15,7 @@ export interface PostFormData {
 // تابع اکشن برای useActionState
 export async function createPost(
   previousState: PostState | null,
-  formData: FormData
+  formData: FormData /* web api formData */
 ): Promise<PostState> {
   //  داده‌ها رو به شکل تایپ‌سیف از فرم می‌گیریم با استفاده وب ایپی های فرم دیتا دقت داشته باشید حتما بادی کلید های نیم رو به اینپوت های فرم داده باشید این ایپی ای
 //   از طریق نیم اینپوت متوجه میشه کاربر روی کدوم اینپوت کلیک کرده که بیاد اطلاعاتش رو بگیره گت کنه
