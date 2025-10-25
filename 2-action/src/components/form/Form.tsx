@@ -46,9 +46,9 @@ const Form = () => {
         <h1>simple form</h1>
         <form onSubmit={submitHandler}>
         <label htmlFor="title">title</label>
-        <input type="text" name="title" value={data.title} onChange={changeHandler} placeholder="title" /><br />
+        <input id="title" type="text" name="title" value={data.title} onChange={changeHandler} placeholder="title" /><br />
         <label htmlFor="body">body</label>
-        <input type="text" name="body" value={data.body} onChange={changeHandler} placeholder="body" />
+        <input id="body" type="text" name="body" value={data.body} onChange={changeHandler} placeholder="body" />
         <button type="submit" disabled={isPending}>
             {isPending ? "submitted..." : "submit"}
         </button>

@@ -1,4 +1,5 @@
 import Form from "./components/form/Form"
+import ActionStateComponent from "./components/useActionStateForm/ActionStateComponent"
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
     <br />
     <br />
     <hr />
+    <ActionStateComponent/>
     </>
   )
 }
