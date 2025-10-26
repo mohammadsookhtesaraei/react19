@@ -1,8 +1,12 @@
+import SuspenseWrapper from "./components/SuspenseWrapper"
+import { DataProvider } from "./context/DataProvider"
 
 
 const App = () => {
   return (
-    <div>App</div>
+    <DataProvider>
+    <SuspenseWrapper/>
+    </DataProvider>
   )
 }
 
